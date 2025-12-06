@@ -1,25 +1,41 @@
-# 안녕하세요, 풀스택 개발자 이한세입니다 👋
+# 이한세 | Hanse Lee
 
-웹과 모바일 앱 개발 경험을 보유한 풀스택 개발자입니다.  
-**실제 사용자 문제를 해결하는 프로덕트**를 만들고, **다양한 기술 스택을 유기적으로 결합해 완성도 높은 서비스**를 구현합니다.
+**문제를 깊게 이해하고, 근본적인 해결책을 만드는 개발자입니다.**  
+React·TypeScript 기반의 프론트엔드 개발을 중심으로, Node.js/Express 백엔드 및  
+React Native + Kotlin 네이티브 모듈 개발 경험을 통해 **웹·모바일 전반을 아우르는 풀스택 역량**을 갖춰가고 있습니다.
+
+명확한 설계, 재사용 가능한 컴포넌트 구조, 기술적 선택의 근거를 문서화하며  
+**협업 가능한 코드베이스**를 만들기 위해 노력합니다.
 
 <br/>
 
 ## 💻 Tech Stack
 
-**Frontend**
-- React, Next.js, TypeScript
-- React Native, Expo
-- JavaScript (ES6+)
+### Language
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=JavaScript&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=TypeScript&logoColor=white)
 
-**Backend**
-- Node.js, Express
-- MongoDB, PostgreSQL
+### Frontend
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=black)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=Next.js&logoColor=white)
+![Zustand](https://img.shields.io/badge/Zustand-443E38?style=flat-square&logo=React&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=TailwindCSS&logoColor=white)
 
-**Tools & Others**
-- Git/GitHub, ESLint, Prettier
-- RESTful API, OAuth 2.0
-- AI/ML Integration (Gemini API)
+### Mobile
+![React Native](https://img.shields.io/badge/React_Native-61DAFB?style=flat-square&logo=React&logoColor=black)
+![Expo](https://img.shields.io/badge/Expo-000020?style=flat-square&logo=Expo&logoColor=white)
+![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=Kotlin&logoColor=white)
+
+### Backend & Database
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=Node.js&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=Express&logoColor=white)
+![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=Prisma&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=MongoDB&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=PostgreSQL&logoColor=white)
+
+### Tools & Platform
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=Git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white)
 
 <br/>
 
@@ -52,13 +68,21 @@ Google Calendar와 연동하여 사용자의 일정에 맞는 TED, 세바시 등
 
 <br/>
 
-## 📊 GitHub Stats
+## 🎯 현재 집중하는 분야
 
-![Hanse's GitHub stats](https://github-readme-stats.vercel.app/api?username=2hanse&show_icons=true&theme=default)
+### 📱 Mobile Development
+React Native 기반 앱의 안정성과 확장성을 높이기 위해  
+**네이티브 모듈, 알림 시스템, OAuth, 데이터 파이프라인** 등을 실제 서비스 수준으로 구현하고 있습니다.
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=2hanse&layout=compact)
+### 🔍 Clean Architecture & Testing
+컴포넌트 구조 재정비, 관심사 분리, 테스트가 가능한 구조로 리팩토링을 진행 중입니다.  
+Jest 기반 단위 테스트 도입 준비 중입니다.
 
+### 📘 문서화 & 아키텍처 설계
+기술적 선택의 이유, 설계 의도, 주요 흐름을 문서화하여 팀에서 이해하기 쉬운 구조를 만드는 데 집중하고 있습니다.
 <br/>
+
+---
 
 ## 📫 Contact
 
@@ -66,9 +90,4 @@ Google Calendar와 연동하여 사용자의 일정에 맞는 TED, 세바시 등
 
 <br/>
 
----
 
-💡 **현재 집중하고 있는 것:**
-- 모바일 앱 개발 역량 강화
-- 클린 코드와 테스트 주도 개발 (TDD)
-- 포트폴리오 프로젝트 고도화 및 문서화
