@@ -1,93 +1,59 @@
 # 이한세 | Hanse Lee
 
-**문제를 깊게 이해하고, 근본적인 해결책을 만드는 개발자입니다.**  
-React·TypeScript 기반의 프론트엔드 개발을 중심으로, Node.js/Express 백엔드 및  
-React Native + Kotlin 네이티브 모듈 개발 경험을 통해 **웹·모바일 전반을 아우르는 풀스택 역량**을 갖춰가고 있습니다.
+**반복되는 배포·검증 문제를 자동화와 게이트로 해결하는 개발자입니다.**
 
-명확한 설계, 재사용 가능한 컴포넌트 구조, 기술적 선택의 근거를 문서화하며  
-**협업 가능한 코드베이스**를 만들기 위해 노력합니다.
+쓰리더블유에서 업무 협업 서비스 WITIM(웹·Flutter 앱·데스크톱 모노레포)과 신규 웹 서비스를 개발하고 있습니다(2026.01 ~ 재직 중).  
+구현은 AI 코딩 에이전트에게 맡기고, 문제 정의·설계 결정·검증은 직접 합니다.
+
+> 회사 저장소는 비공개라, 코드 대신 한 일과 판단을 적었습니다.
+
+<br/>
+
+## 🏢 쓰리더블유 실무 (2026.01 ~)
+
+### CI/CD와 배포 자동화
+
+- **릴리즈 노트 자동 발행** — 루트 VERSION 하나에 섞여 있던 앱 버전을 앱별로 나누고, 저장소에 쌓이던 릴리즈 노트를 병합 때 GitHub Releases로 자동 발행하게 바꿨습니다. 발행된 태그는 건너뛰고 모든 트랙이 성공해야 원본을 지워, 부분 실패는 다음 실행이 재시도합니다. 3개월 넘게 다른 개발자의 병합에서도 동작했습니다.
+- **모바일 CI/CD** — iOS·Android 버전을 VERSION 파일 하나에서 Xcode Run Script·Gradle로 빌드 시점에 주입하고, 병합마다 돌며 등재된 빌드 번호와 부딪히던 자동 배포를 수동 실행 전용으로 바꿨습니다.
+- **자체 호스팅 배포 장애** — 배포마다 CSS가 깨지던 문제를 `root로 실행된 서비스 → 캐시 파일 root 소유 → 다음 배포 rm -rf 실패 → && 단락 평가로 복사 누락 → 새 CSS 404` 원인 체인으로 규명하고, 서비스 실행 사용자 지정과 복사 실패 시 단계 실패로 고쳤습니다.
+
+### AI 개발 도구와 품질 게이트
+
+- **QA 봇** — QA 이슈의 간단한 UI 수정을 헤드리스 코딩 에이전트에 맡기되, 결과물은 브랜치 커밋까지로 제한하고 반영은 사람이 정하게 설계해 시험 운영했습니다. 게이트 결과는 에이전트의 자기 보고 대신 스크립트 실측값으로 판정합니다.
+- **개발 하네스(개인)** — 완료 조건 → 수정 전 e2e 재현 → 커밋 전 e2e 통과·다른 모델 교차 검증을 Claude Code 훅으로 강제합니다.
+
+### 오류 감지와 장애 진단
+
+- **운영에서만 깨지던 배포 결함** — 신규 웹 서비스를 운영과 같은 구성으로 실기동해 CI가 놓친 배포 결함을 찾아 고치고, 반복되던 환경변수 누락은 코드가 읽는 키와 배포 설정을 대조하는 테스트로 막았습니다.
+- **푸시 탭 이동 회귀** — 알림함과 달리 푸시 경로에만 링크 번역이 없다는 차이에서 원인을 찾아 서버 알림 링크를 앱 라우트로 번역하고, 수리를 되돌리면 실패하는 통합 테스트를 두었습니다.
+
+<br/>
+
+## 📦 입사 전 프로젝트 (AI 코딩 도구 없이 작성)
+
+- **[싹싹커밋](https://github.com/ssak-three/ssakssak-commit)** · 3인 팀 · 2025.08 ~ 11 — 커밋 분석 리포트 서비스에서 커밋 수집과 GitHub API 한도 대응, 리포트·분석 진행 화면 담당
+- **[QuickWise](https://github.com/2hanse/Quick-wise)** · 1인 · 2025.09 ~ 12 — Google Calendar 일정 맞춤 준비 카드 Android 앱. Kotlin 알림 모듈을 RN 브릿지에서 Expo Modules API 로컬 모듈로 이전
 
 <br/>
 
 ## 💻 Tech Stack
 
-### Language
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=JavaScript&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=TypeScript&logoColor=white)
-
-### Frontend
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=black)
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=Next.js&logoColor=white)
-![Zustand](https://img.shields.io/badge/Zustand-443E38?style=flat-square&logo=React&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=TailwindCSS&logoColor=white)
-
-### Mobile
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=black)
 ![React Native](https://img.shields.io/badge/React_Native-61DAFB?style=flat-square&logo=React&logoColor=black)
-![Expo](https://img.shields.io/badge/Expo-000020?style=flat-square&logo=Expo&logoColor=white)
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=Flutter&logoColor=white)
 ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=Kotlin&logoColor=white)
-
-### Backend & Database
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=Node.js&logoColor=white)
-![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=Express&logoColor=white)
-![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=Prisma&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=MongoDB&logoColor=white)
+![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=flat-square&logo=NestJS&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=PostgreSQL&logoColor=white)
-
-### Tools & Platform
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=Git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white)
-
-<br/>
-
-## 🚀 Projects
-
-### [ssakssak-commit](https://github.com/YOUR_ORG/ssakssak-commit)
-> AI 기반 개발자 커밋 분석 플랫폼
-
-GitHub 커밋 데이터를 AI로 분석하여 채용 담당자가 개발자의 코딩 프로세스를 이해할 수 있도록 돕는 팀 프로젝트입니다.
-
-- **역할:** 풀스택 개발, 온보딩 기능 구현, 코드 리뷰
-- **기술:** React, Node.js, AI 통합
-- **성과:** 체계적인 Git 워크플로우 및 팀 협업 컨벤션 적용
-
-### [QuickWise](https://github.com/YOUR_USERNAME/QuickWise)
-> AI 기반 일정 맞춤형 콘텐츠 추천 모바일 앱
-
-Google Calendar와 연동하여 사용자의 일정에 맞는 TED, 세바시 등의 교육 콘텐츠를 AI가 추천해주는 개인 프로젝트입니다.
-
-- **기술:** React Native, Expo, Gemini API, Google OAuth
-- **주요 기능:**
-  - Google Calendar 연동 및 OAuth 인증
-  - Kotlin 기반 네이티브 알림 시스템 (AlarmManager)
-  - AI 기반 콘텐츠 생성 파이프라인
-  - YouTube Data API 통합
-- **문제 해결:**
-  - Android OAuth deep linking 이슈 해결
-  - API rate limiting 최적화
-  - Worklets 버전 충돌 해결
+![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=Prisma&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=GitHubActions&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=Docker&logoColor=white)
+![Vitest](https://img.shields.io/badge/Vitest-6E9F18?style=flat-square&logo=Vitest&logoColor=white)
+![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=Anthropic&logoColor=white)
 
 <br/>
-
-## 🎯 현재 집중하는 분야
-
-### 📱 Mobile Development
-React Native 기반 앱의 안정성과 확장성을 높이기 위해  
-**네이티브 모듈, 알림 시스템, OAuth, 데이터 파이프라인** 등을 실제 서비스 수준으로 구현하고 있습니다.
-
-### 🔍 Clean Architecture & Testing
-컴포넌트 구조 재정비, 관심사 분리, 테스트가 가능한 구조로 리팩토링을 진행 중입니다.  
-Jest 기반 단위 테스트 도입 준비 중입니다.
-
-### 📘 문서화 & 아키텍처 설계
-기술적 선택의 이유, 설계 의도, 주요 흐름을 문서화하여 팀에서 이해하기 쉬운 구조를 만드는 데 집중하고 있습니다.
-<br/>
-
----
 
 ## 📫 Contact
 
 - **Email:** leehanse.dev@gmail.com
-
-<br/>
-
-
