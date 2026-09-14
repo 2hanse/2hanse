@@ -29,6 +29,12 @@
 
 <br/>
 
+## 🐾 사이드 프로젝트
+
+- **[댕로드](https://github.com/After-Daeng-Road/After-Daeng-Road)** · 2026 관광데이터 활용 공모전 출품 · 2026.05 ~ 진행 중 · [데모](https://after-daeng-road-web-pi.vercel.app) — 퇴근 후 반려견과 다녀올 한적한 근교를 추천하는 서비스. 한국관광공사 TourAPI·반려동물 동반여행 API 연동, 추천 API(시간 예산·운영시간 반영·페이지네이션), 관광 데이터 실측 기반 한적도 적재, 회원 탈퇴·개인정보 파기 로직을 맡았습니다.
+
+<br/>
+
 ## 📦 입사 전 프로젝트 (AI 코딩 도구 없이 작성)
 
 - **[싹싹커밋](https://github.com/ssak-three/ssakssak-commit)** · 3인 팀 · 2025.08 ~ 11 — 커밋 분석 리포트 서비스에서 커밋 수집과 GitHub API 한도 대응, 리포트·분석 진행 화면 담당
